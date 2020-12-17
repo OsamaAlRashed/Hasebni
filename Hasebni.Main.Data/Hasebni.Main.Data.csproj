@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAdmin" Version="1.17.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hasebni.Base\Hasebni.Base.csproj" />
+    <ProjectReference Include="..\Hasebni.Main.Idata\Hasebni.Main.Idata.csproj" />
+    <ProjectReference Include="..\Hasebni.SharedKernal\Hasebni.SharedKernal.csproj" />
+  </ItemGroup>
+
+</Project>

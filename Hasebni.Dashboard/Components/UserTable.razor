@@ -1,0 +1,33 @@
+﻿@inject NavigationManager NavigationManage
+
+@if (Users.Count > 0)
+{
+    <h3>Count : @Users.Count</h3>
+    <MatTable Items="@Users" class="mat-elevation-z5">
+        <MatTableHeader>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Actions</th>
+        </MatTableHeader>
+        <MatTableRow>
+            <td>@context.FirstName</td>
+            <td>@context.LastName</td>
+            <button class="btn btn-sm btn-dark" @onclick="@(e=>@ShowGroups(context.Id))">Get Groups</button>
+
+
+        </MatTableRow>
+    </MatTable>
+    @if (Groups.Count() > 0)
+    {
+        foreach (var item in Groups)
+        {
+            <p>@item.Name</p>
+        }
+    }
+}
+else
+{
+    <span>
+        Loading Users...
+    </span>
+}

@@ -1,0 +1,25 @@
+﻿@inherits OwningComponentBase;
+@page "/group"
+
+@if (GroupList.Count > 0)
+{
+    <div class="row">
+        @foreach (var item in GroupList)
+        {
+            <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="@item.ImageUrl" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Description</p>
+                    <a class="btn btn-dark" href="/group/details/id" >View</a>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <span>
+        loading ...
+    </span>
+}

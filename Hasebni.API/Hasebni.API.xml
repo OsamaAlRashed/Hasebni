@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hasebni.API</name>
+    </assembly>
+    <members>
+        <member name="M:Hasebni.API.Controllers.WeatherForecastController.Get">
+            <summary>
+            return the weather for today 
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
